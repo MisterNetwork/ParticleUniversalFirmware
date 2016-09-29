@@ -45,9 +45,9 @@ OneWire one = OneWire(D7);  //Temp Sensor D280 Pin
      int relay1=D3;  // high temp relay
      int relay2=A7;  // over temp relay
 // Your secret DevID from PushingBox.com. You can use multiple DevID  on multiple Pin if you want
-const char * DEVID1 = "v111";         // Scenario: 111
-const char * DEVID2 = "v112";         // Scenario: 112
-const char * DEVID3 = "v113";         // Scenario: 113
+const char * DEVID1 = "<< v111 if applicable >>";         // Scenario: 111
+const char * DEVID2 = "<< v112 if applicable >>";         // Scenario: 112
+const char * DEVID3 = "<< v113 if applicable >>";         // Scenario: 113
 
 #elif (PLATFORM_ID == 6)  // Photon + ShieldShield V3.0
 char * platformID = "Photon";
@@ -56,9 +56,9 @@ OneWire one = OneWire(D7);  //Temp Sensor D280 Pin
      int relay1=D3;  // high temp relay
      int relay2=A7;  // over temp relay
 // Your secret DevID from PushingBox.com. You can use multiple DevID  on multiple Pin if you want
-const char * DEVID1 = "v211";         // Scenario: 211
-const char * DEVID2 = "v212";         // Scenario: 212
-const char * DEVID3 = "v213";         // Scenario: 213
+const char * DEVID1 = "<< v211 if applicable >>";         // Scenario: 211
+const char * DEVID2 = "<< v212 if applicable >>";         // Scenario: 212
+const char * DEVID3 = "<< v213 if applicable >>";         // Scenario: 213
 
 #elif (PLATFORM_ID == 8) // P1 Sparkfun
 char * platformID = "P1";
@@ -72,9 +72,9 @@ char * platformID = "P1";
      int relay1=D3;  // high temp relay
      int relay2=A7;  // over temp relay
      //  Default values redefined below in  "" if (!startFlag){...""
-     const char * DEVID1 = "v331";         // Scenario: 331
-     const char * DEVID2 = "v332";         // Scenario: 332
-     const char * DEVID3 = "v333";         // Scenario: 333
+     const char * DEVID1 = "<< v331 if applicable >>";         // Scenario: 331
+     const char * DEVID2 = "<< v332 if applicable >>";         // Scenario: 332
+     const char * DEVID3 = "<< v333 if applicable >>";         // Scenario: 333
 
 
 #endif
@@ -82,9 +82,9 @@ char * platformID = "P1";
 //****************************************************************************
 
 
- char * ETRON1 = "< 1st electron device ID >";
- char * ETRON2 = "< 2nd electron device ID >";
- char * ETRON3 = "< 3rd electron device ID >";
+ char * ETRON1 = "<< 1st electron device ID >>";
+ char * ETRON2 = "<< 2nd electron device ID >>";
+ char * ETRON3 = "<< 3rd electron device ID >>";
 
 const char * serverName = "api.pushingbox.com";   // PushingBox API URL
 boolean heatState = false;             // Save the last state for DEVID1
@@ -361,7 +361,7 @@ else
 
 // Differentiate between different Electron Devices
 
-if (myID == "< 3rd electron device ID >"){
+if (myID == "<< 3rd electron device ID >>"){
             Serial.println("electron3");
         Serial.print("DeviceID: ");
         Serial.println(myID);
@@ -371,13 +371,13 @@ if (myID == "< 3rd electron device ID >"){
      relay1=D1;  // high temp relay
      relay2=D2;  // over temp relay
 // Your secret DevID from PushingBox.com. You can use multiple DevID  on multiple Pin if you want
- DEVID1 = "v331";         // Scenario: 331
- DEVID2 = "v332";         // Scenario: 332
- DEVID3 = "v333";         // Scenario: 333
+ DEVID1 = "<< v331 if applicable >>";         // Scenario: 331
+ DEVID2 = "<< v332 if applicable >>";         // Scenario: 332
+ DEVID3 = "<< v333 if applicable >>";         // Scenario: 333
     }
 
 else
-    if (myID == "< 2nd electron device ID >"){
+    if (myID == "<< 2nd electron device ID >>"){
         Serial.println("electron2");
         Serial.print("DeviceID: ");
         Serial.println(myID);
@@ -387,14 +387,14 @@ else
      relay1=D1;  // high temp relay
      relay2=D2;  // over temp relay
 // Your secret DevID from PushingBox.com. You can use multiple DevID  on multiple Pin if you want
- DEVID1 = "v321";         // Scenario: 321
-DEVID2 = "v322";         // Scenario: 322
-DEVID3 = "v323";         // Scenario: 323
+ DEVID1 = "<< v321 if applicable >>";         // Scenario: 321
+ DEVID2 = "<< v322 if applicable >>";         // Scenario: 322
+ DEVID3 = "<< v323 if applicable >>";         // Scenario: 323
      }  
 
 
 else
-    if (myID == "< 1st electron device ID >") {
+    if (myID == "<< 1st electron device ID >>") {
         Serial.println("electron1");
         Serial.print("DeviceID: ");
         Serial.println(myID);
@@ -404,9 +404,9 @@ else
      relay1=D3;  // high temp relay
      relay2=A7;  // over temp relay
 // Your secret DevID from PushingBox.com. You can use multiple DevID
-DEVID1 = "v311";         // Scenario: 311
-DEVID2 = "v312";         // Scenario: 312
-DEVID3 = "v313";         // Scenario: 313
+ DEVID1 = "<< v311 if applicable >>";         // Scenario: 311
+ DEVID2 = "<< v312 if applicable >>";         // Scenario: 312
+ DEVID3 = "<< v313 if applicable >>";         // Scenario: 313
      }
 
 
